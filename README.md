@@ -74,7 +74,7 @@ Follow these steps to run the frontend locally:
 git clone https://github.com/Ritikbadhan/Mini-CRM.git
 
 # 2️⃣ Navigate into the frontend directory
-cd frontend
+cd Mini-CRM
 
 # 3️⃣ Install dependencies
 npm install --legacy-peer-deps
