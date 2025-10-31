@@ -1,36 +1,136 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧩 Mini CRM
 
-## Getting Started
+A modern **frontend CRM dashboard** built with **Next.js**, **React**, and **Tailwind CSS**.  
+This project focuses on managing and visualizing campaign data — allowing users to create, edit, and track marketing campaigns with real-time updates on the dashboard.
 
-First, run the development server:
+---
+
+## 📸 Application Screenshots
+
+| Dashboard | Campaigns | Create Campaign |
+|------------|------------|----------------|
+<img width="1919" height="838" alt="Screenshot_1" src="https://github.com/user-attachments/assets/f8dfebc4-fe45-4cc2-a712-7f2f26e77c61" />
+<img width="1919" height="820" alt="Screenshot_2" src="https://github.com/user-attachments/assets/38cd6812-31d0-4502-b446-57ab5ff4f999" />
+<img width="1919" height="827" alt="Screenshot_17" src="https://github.com/user-attachments/assets/ad43d44f-1e48-440d-be85-b8c56f57a6a5" />
+
+
+
+
+---
+
+## 🧠 Overview
+
+**Mini CRM** provides a simplified, responsive dashboard where users can manage their campaigns efficiently.  
+The system displays live statistics, charts, and tables reflecting campaign performance, helping teams visualize their marketing data in real time.
+
+---
+
+## 🔥 Features
+
+- 📊 **Interactive Dashboard**
+  - Summary cards showing campaign metrics
+  - Dynamic Recharts graph for visual analytics
+
+- 🗂️ **Campaign Management**
+  - Create, edit (inline), and delete campaigns
+  - Real-time updates reflected in dashboard and charts
+
+- 🧾 **Create Campaign Modal**
+  - Add new campaign details (Name, Type, Description)
+  - Auto-sync with summary cards and campaign table
+
+- 📱 **Responsive UI**
+  - Built with Tailwind CSS and Radix UI components
+  - Works seamlessly on desktop and mobile devices
+
+- 🔔 **Notifications**
+  - Integrated with React Hot Toast for instant feedback
+
+---
+
+## ⚙️ Tech Stack
+
+### 🎨 Frontend
+
+| Technology | Description |
+|-------------|-------------|
+| **Framework** | Next.js 16 (React 19) |
+| **Language** | TypeScript |
+| **Styling** | Tailwind CSS 4 |
+| **UI Components** | Radix UI + Lucide Icons |
+| **Forms & Validation** | React Hook Form + Zod |
+| **Charts** | Recharts 3 |
+| **Notifications** | React Hot Toast |
+| **Utilities** | UUID, Tailwind Merge, Class Variance Authority |
+
+---
+
+## 🚀 Setup Instructions
+
+Follow these steps to run the frontend locally:
 
 ```bash
+# 1️⃣ Clone the repository
+git clone https://github.com/Ritikbadhan/Mini-CRM.git
+
+# 2️⃣ Navigate into the frontend directory
+cd Mini-CRM
+
+# 3️⃣ Install dependencies
+npm install --legacy-peer-deps
+
+# 4️⃣ Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+After starting, visit:  
+👉 [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧱 Project Structure
 
-## Learn More
+```
+src/
+│
+├── app/
+│   ├── campaigns/
+│   │   ├── create/
+│   │   │   └── page.tsx           # Create Campaign Page
+│   │   └── page.tsx               # Campaigns Listing Page
+│   ├── components/
+│   │   ├── CampaignTable.tsx      # Campaigns Table
+│   │   ├── EmailPerformanceChart.tsx  # Recharts Performance Graph
+│   │   ├── Sidebar.tsx            # App Sidebar Navigation
+│   │   └── SummaryCard.tsx        # Dashboard Cards
+│   ├── favicon.ico
+│   ├── globals.css                # Global Styles
+│   ├── layout.tsx                 # Root Layout
+│   └── page.tsx                   # Dashboard Page
+│
+├── components/                    # Shared Components
+├── data/
+│   └── dashboardData.ts           # Static Dashboard Data
+│
+├── lib/
+│   ├── models/                    # Type Models
+│   └── utils.ts                   # Utility Functions
+│
+├── schemas/                       # Validation Schemas
+└── .gitignore
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📈 Workflow
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Open the **Dashboard** to view campaign performance metrics.  
+2. Navigate to **Campaigns** to manage existing campaigns.  
+3. Click **Create New Campaign** to add a new one.  
+4. Dashboard and chart update automatically upon each change.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧾 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open source and available under the **MIT License**.
