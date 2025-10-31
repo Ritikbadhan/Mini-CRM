@@ -71,7 +71,7 @@ Follow these steps to run the frontend locally:
 
 ```bash
 # 1️⃣ Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/Ritikbadhan/Mini-CRM.git
 
 # 2️⃣ Navigate into the frontend directory
 cd frontend
