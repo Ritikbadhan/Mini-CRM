@@ -69,6 +69,8 @@ The system displays live statistics, charts, and tables reflecting campaign perf
 
 Follow these steps to run the frontend locally:
 
+Open cmd and then run these commands
+
 ```bash
 # 1️⃣ Clone the repository
 git clone https://github.com/Ritikbadhan/Mini-CRM.git
